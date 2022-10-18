@@ -1,0 +1,58 @@
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+    flex: 1;
+    border: 2px solid green;
+}
+
+.header h3 {
+    flex: 1;
+}
+
+.banner {
+    background-color: #1F2937;
+    color: wheat;
+    padding: 0px 180px;
+}
+
+.header,
+.signup-screen {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.signup-text,
+.signup-screen img {
+    flex:1;
+}
+
+
+
+.signup-screen {
+    display:flex;
+    padding: 200px 0px;
+}
+
+.signup-screen img {
+    flex: none;
+    border: 2px solid red;
+}
