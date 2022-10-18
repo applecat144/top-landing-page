@@ -1,6 +1,9 @@
 body {
     display:flex;
     flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -16,11 +19,13 @@ ul {
     padding: 0;
     gap: 12px;
     flex: 1;
-    border: 2px solid green;
 }
 
-.header h3 {
-    flex: 1;
+button {
+    border-radius: 5px;
+    border: none;
+    background-color: #3882F6;
+    color: wheat;
 }
 
 .banner {
@@ -30,7 +35,8 @@ ul {
 }
 
 .header,
-.signup-screen {
+.signup-screen,
+.signup-banner {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -38,21 +44,43 @@ ul {
 .header {
     display:flex;
     justify-content: space-between;
+    align-content: center;
+    padding: 20px;
 }
 
-.signup-text,
-.signup-screen img {
-    flex:1;
+.header-logo {
+    margin: 0px;
 }
-
-
 
 .signup-screen {
     display:flex;
     padding: 200px 0px;
+    gap: 50px;
 }
 
 .signup-screen img {
-    flex: none;
-    border: 2px solid red;
+    max-height: auto;
+    max-width: 45%;
+    border-radius: 25px;
+}
+
+.signup-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signup-text h1,
+.signup-text p{
+    margin: 0px;
+}
+
+.signup-text h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.signup-text button{
+    max-width: 20%;
+    padding: 10px;
 }
