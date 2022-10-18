@@ -23,6 +23,7 @@ ul {
 
 button {
     border-radius: 5px;
+    padding: 10px;
     border: none;
     background-color: #3882F6;
     color: wheat;
@@ -36,7 +37,8 @@ button {
 
 .header,
 .signup-screen,
-.signup-banner {
+.signup-banner,
+.info {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -50,6 +52,7 @@ button {
 
 .header-logo {
     margin: 0px;
+    padding: 0px;
 }
 
 .signup-screen {
@@ -82,5 +85,23 @@ button {
 
 .signup-text button{
     max-width: 20%;
-    padding: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+    margin-bottom: 80px;
+}
+
+.card {
+    text-align: center;
+    max-width: 200px;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
 }
